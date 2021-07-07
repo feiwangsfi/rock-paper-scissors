@@ -35,10 +35,10 @@ jobs:
         run: mvn -B package --file pom.xml
         
       - name: step 4 - list the current directory
-        runs: ls -a
+        run: ls -a
         
       - name: step 5 - what's in the target folder ?
-        runs: |
+        run: |
           cd target
           ls -a
         
